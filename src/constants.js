@@ -7,7 +7,12 @@ const MYSQL_USER = String(process.env.MYSQL_USER) || '';
 const MYSQL_PASS = String(process.env.MYSQL_PASS) || '';
 const MYSQL_DB = String(process.env.MYSQL_DB) || '';
 const MONGO_URL = String(process.env.MONGO_URL) || '';
-const MONGO_DB = String(process.env.MONGO_DB) || '';
+
+const COLLECTIONS = [
+  'films',
+  'tv_shows',
+  'users'
+];
 
 module.exports = {
   MYSQL_HOST,
@@ -16,5 +21,5 @@ module.exports = {
   MYSQL_PASS,
   MYSQL_DB,
   MONGO_URL,
-  MONGO_DB
+  COLLECTIONS
 };
