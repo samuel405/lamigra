@@ -1,0 +1,163 @@
+{
+"episodes": [
+	{
+		"id" : 1,
+		"name" : "episodes 1",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 9
+	},
+	{
+		"id" : 2,
+		"name" : "episodes 2",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 14
+	},
+	{
+		"id" : 3,
+		"name" : "episodes 3",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 7
+	},
+	{
+		"id" : 4,
+		"name" : "episodes 4",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 16
+	},
+	{
+		"id" : 5,
+		"name" : "episodes 5",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 12
+	},
+	{
+		"id" : 6,
+		"name" : "episodes 6",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 9
+	},
+	{
+		"id" : 7,
+		"name" : "episodes 7",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 6
+	},
+	{
+		"id" : 8,
+		"name" : "episodes 8",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 17
+	},
+	{
+		"id" : 9,
+		"name" : "episodes 9",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 3
+	},
+	{
+		"id" : 10,
+		"name" : "episodes 10",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 18
+	},
+	{
+		"id" : 11,
+		"name" : "episodes 11",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 14
+	},
+	{
+		"id" : 12,
+		"name" : "episodes 12",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 19
+	},
+	{
+		"id" : 13,
+		"name" : "episodes 13",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 20
+	},
+	{
+		"id" : 14,
+		"name" : "episodes 14",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 4
+	},
+	{
+		"id" : 15,
+		"name" : "episodes 15",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 11
+	},
+	{
+		"id" : 16,
+		"name" : "episodes 16",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 17
+	},
+	{
+		"id" : 17,
+		"name" : "episodes 17",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 11
+	},
+	{
+		"id" : 18,
+		"name" : "episodes 18",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 8
+	},
+	{
+		"id" : 19,
+		"name" : "episodes 19",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 1
+	},
+	{
+		"id" : 20,
+		"name" : "episodes 20",
+		"duration" : 150,
+		"season" : 1,
+		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
+		"fk_tv_show" : 6
+	}
+]}

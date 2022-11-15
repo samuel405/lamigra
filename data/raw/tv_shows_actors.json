@@ -1,0 +1,103 @@
+{
+"tv_shows_actors": [
+	{
+		"id" : 1,
+		"fk_tv_show" : 12,
+		"fk_actors" : 9
+	},
+	{
+		"id" : 2,
+		"fk_tv_show" : 9,
+		"fk_actors" : 4
+	},
+	{
+		"id" : 3,
+		"fk_tv_show" : 13,
+		"fk_actors" : 18
+	},
+	{
+		"id" : 4,
+		"fk_tv_show" : 12,
+		"fk_actors" : 16
+	},
+	{
+		"id" : 5,
+		"fk_tv_show" : 14,
+		"fk_actors" : 20
+	},
+	{
+		"id" : 6,
+		"fk_tv_show" : 6,
+		"fk_actors" : 10
+	},
+	{
+		"id" : 7,
+		"fk_tv_show" : 3,
+		"fk_actors" : 2
+	},
+	{
+		"id" : 8,
+		"fk_tv_show" : 14,
+		"fk_actors" : 10
+	},
+	{
+		"id" : 9,
+		"fk_tv_show" : 7,
+		"fk_actors" : 7
+	},
+	{
+		"id" : 10,
+		"fk_tv_show" : 4,
+		"fk_actors" : 7
+	},
+	{
+		"id" : 11,
+		"fk_tv_show" : 19,
+		"fk_actors" : 16
+	},
+	{
+		"id" : 12,
+		"fk_tv_show" : 6,
+		"fk_actors" : 7
+	},
+	{
+		"id" : 13,
+		"fk_tv_show" : 7,
+		"fk_actors" : 5
+	},
+	{
+		"id" : 14,
+		"fk_tv_show" : 15,
+		"fk_actors" : 7
+	},
+	{
+		"id" : 15,
+		"fk_tv_show" : 14,
+		"fk_actors" : 19
+	},
+	{
+		"id" : 16,
+		"fk_tv_show" : 1,
+		"fk_actors" : 9
+	},
+	{
+		"id" : 17,
+		"fk_tv_show" : 1,
+		"fk_actors" : 13
+	},
+	{
+		"id" : 18,
+		"fk_tv_show" : 7,
+		"fk_actors" : 16
+	},
+	{
+		"id" : 19,
+		"fk_tv_show" : 16,
+		"fk_actors" : 19
+	},
+	{
+		"id" : 20,
+		"fk_tv_show" : 12,
+		"fk_actors" : 4
+	}
+]}

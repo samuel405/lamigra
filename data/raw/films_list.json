@@ -1,0 +1,123 @@
+{
+"films_list": [
+	{
+		"id" : 1,
+		"fk_film" : 1,
+		"fk_user" : 8,
+		"evaluation" : 5
+	},
+	{
+		"id" : 2,
+		"fk_film" : 8,
+		"fk_user" : 14,
+		"evaluation" : 5
+	},
+	{
+		"id" : 3,
+		"fk_film" : 8,
+		"fk_user" : 19,
+		"evaluation" : 5
+	},
+	{
+		"id" : 4,
+		"fk_film" : 13,
+		"fk_user" : 6,
+		"evaluation" : 5
+	},
+	{
+		"id" : 5,
+		"fk_film" : 14,
+		"fk_user" : 18,
+		"evaluation" : 5
+	},
+	{
+		"id" : 6,
+		"fk_film" : 1,
+		"fk_user" : 1,
+		"evaluation" : 5
+	},
+	{
+		"id" : 7,
+		"fk_film" : 13,
+		"fk_user" : 11,
+		"evaluation" : 5
+	},
+	{
+		"id" : 8,
+		"fk_film" : 19,
+		"fk_user" : 15,
+		"evaluation" : 5
+	},
+	{
+		"id" : 9,
+		"fk_film" : 20,
+		"fk_user" : 4,
+		"evaluation" : 5
+	},
+	{
+		"id" : 10,
+		"fk_film" : 11,
+		"fk_user" : 2,
+		"evaluation" : 5
+	},
+	{
+		"id" : 11,
+		"fk_film" : 6,
+		"fk_user" : 1,
+		"evaluation" : 5
+	},
+	{
+		"id" : 12,
+		"fk_film" : 6,
+		"fk_user" : 4,
+		"evaluation" : 5
+	},
+	{
+		"id" : 13,
+		"fk_film" : 13,
+		"fk_user" : 17,
+		"evaluation" : 5
+	},
+	{
+		"id" : 14,
+		"fk_film" : 3,
+		"fk_user" : 17,
+		"evaluation" : 5
+	},
+	{
+		"id" : 15,
+		"fk_film" : 5,
+		"fk_user" : 3,
+		"evaluation" : 5
+	},
+	{
+		"id" : 16,
+		"fk_film" : 5,
+		"fk_user" : 10,
+		"evaluation" : 5
+	},
+	{
+		"id" : 17,
+		"fk_film" : 8,
+		"fk_user" : 8,
+		"evaluation" : 5
+	},
+	{
+		"id" : 18,
+		"fk_film" : 13,
+		"fk_user" : 9,
+		"evaluation" : 5
+	},
+	{
+		"id" : 19,
+		"fk_film" : 8,
+		"fk_user" : 5,
+		"evaluation" : 5
+	},
+	{
+		"id" : 20,
+		"fk_film" : 6,
+		"fk_user" : 1,
+		"evaluation" : 5
+	}
+]}

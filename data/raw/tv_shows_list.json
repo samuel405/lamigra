@@ -1,0 +1,103 @@
+{
+"tv_shows_list": [
+	{
+		"id" : 1,
+		"fk_show" : 16,
+		"fk_user" : 20
+	},
+	{
+		"id" : 2,
+		"fk_show" : 7,
+		"fk_user" : 16
+	},
+	{
+		"id" : 3,
+		"fk_show" : 14,
+		"fk_user" : 5
+	},
+	{
+		"id" : 4,
+		"fk_show" : 16,
+		"fk_user" : 8
+	},
+	{
+		"id" : 5,
+		"fk_show" : 14,
+		"fk_user" : 19
+	},
+	{
+		"id" : 6,
+		"fk_show" : 17,
+		"fk_user" : 11
+	},
+	{
+		"id" : 7,
+		"fk_show" : 6,
+		"fk_user" : 14
+	},
+	{
+		"id" : 8,
+		"fk_show" : 14,
+		"fk_user" : 10
+	},
+	{
+		"id" : 9,
+		"fk_show" : 4,
+		"fk_user" : 5
+	},
+	{
+		"id" : 10,
+		"fk_show" : 17,
+		"fk_user" : 13
+	},
+	{
+		"id" : 11,
+		"fk_show" : 4,
+		"fk_user" : 9
+	},
+	{
+		"id" : 12,
+		"fk_show" : 20,
+		"fk_user" : 13
+	},
+	{
+		"id" : 13,
+		"fk_show" : 19,
+		"fk_user" : 1
+	},
+	{
+		"id" : 14,
+		"fk_show" : 16,
+		"fk_user" : 4
+	},
+	{
+		"id" : 15,
+		"fk_show" : 4,
+		"fk_user" : 11
+	},
+	{
+		"id" : 16,
+		"fk_show" : 20,
+		"fk_user" : 10
+	},
+	{
+		"id" : 17,
+		"fk_show" : 16,
+		"fk_user" : 2
+	},
+	{
+		"id" : 18,
+		"fk_show" : 10,
+		"fk_user" : 13
+	},
+	{
+		"id" : 19,
+		"fk_show" : 2,
+		"fk_user" : 1
+	},
+	{
+		"id" : 20,
+		"fk_show" : 5,
+		"fk_user" : 13
+	}
+]}
