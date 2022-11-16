@@ -4,10 +4,12 @@ const log = require("../utils/log");
 
 function generateConfigFile(collNames) {
   log('yellow', 'Generate config file');
+
   if (!collNames) {
     log('red', 'collNames type error');
     return;
   }
+
   let config = [];
   collNames.forEach(name => {
     let fileName = name + '.json';

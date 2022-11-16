@@ -2,14 +2,39 @@
   {
     "source": "films.json",
     "key": "id",
+    "exclude": [
+      "fk_studio"
+    ],
     "aggregate": [
       {
         "layer": 0,
         "source": "studios.json",
-        "key": "id",
+        "key0": "id",
         "prefix": "studio",
         "exclude": [
           "id"
+        ]
+      },
+      {
+        "layer": 1,
+        "source": "film_actors.json",
+        "key0": "fk_film",
+        "key1": "fk_actors",
+        "prefix": "actors",
+        "exclude": [
+          "fk_film",
+          "fk_actors"
+        ],
+        "aggregate": [
+          {
+            "layer": 2,
+            "source": "actors.json",
+            "key2": "id",
+            "prefix": "studio",
+            "exclude": [
+              "id"
+            ]
+          }
         ]
       }
     ],
