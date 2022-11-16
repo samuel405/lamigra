@@ -1,20 +1,19 @@
-
 const fs = require('fs');
+const { COLL_PATH } = require('./constants');
 
-let actors = require('../data/raw/actors.json');
-let episodes = require('../data/raw/episodes.json');
-let film_actors = require('../data/raw/film_actors.json');
-let films_list = require('../data/raw/films_list.json');
-let films = require('../data/raw/films.json');
-let studios = require('../data/raw/studios.json');
-let tv_shows_actors = require('../data/raw/tv_shows_actors.json');
-let tv_shows_list = require('../data/raw/tv_shows_list.json');
-let tv_shows = require('../data/raw/tv_shows.json');
-let users = require('../data/raw/users.json');
+let actors = require('./data/raw/actors.json');
+let episodes = require('./data/raw/episodes.json');
+let film_actors = require('./data/raw/film_actors.json');
+let films_list = require('./data/raw/films_list.json');
+let films = require('./data/raw/films.json');
+let studios = require('./data/raw/studios.json');
+let tv_shows_actors = require('./data/raw/tv_shows_actors.json');
+let tv_shows_list = require('./data/raw/tv_shows_list.json');
+let tv_shows = require('./data/raw/tv_shows.json');
+let users = require('./data/raw/users.json');
 
+function createCollections() {
 
-
-function load() {
   let filmsColl = [];
 
   films.films.map(film => {
@@ -33,7 +32,7 @@ function load() {
     filmsColl.push(film);
   });
 
-  fs.writeFile('../data/collections/films.json', JSON.stringify(filmsColl), (err) => {
+  fs.writeFile(`${COLL_PATH}/films.json`, JSON.stringify(filmsColl), (err) => {
     if (err) throw err;
     console.log('film saved!');
   });
@@ -52,7 +51,7 @@ function load() {
     let filmsList = [];
     filmsList = films_list.films_list.filter(item => item.fk_user === user.id);
 
-    for (let i = 0; i <= filmsList.length; i++) {
+    for (let i = 0; i < filmsList.length; i++) {
       if (!filmsList[i]) {
         continue;
       }
@@ -73,7 +72,7 @@ function load() {
     userColl.push(user);
   });
 
-  fs.writeFile('../data/collections/users.json', JSON.stringify(userColl), (err) => {
+  fs.writeFile(`${COLL_PATH}/users.json`, JSON.stringify(userColl), (err) => {
     if (err) throw err;
     console.log('user saved!');
   });
@@ -94,7 +93,7 @@ function load() {
     tvShowsCol.push(tvShow);
   });
 
-  fs.writeFile(`../data/collections/tv_shows.json`, JSON.stringify(tvShowsCol), (err) => {
+  fs.writeFile(`${COLL_PATH}/tv_shows.json`, JSON.stringify(tvShowsCol), (err) => {
     if (err) throw err;
     console.log('tv_show saved!');
   });
@@ -108,6 +107,4 @@ function load() {
   delete tvShowsCol;
 }
 
-load();
-
-module.exports = load;
+module.exports = createCollections;

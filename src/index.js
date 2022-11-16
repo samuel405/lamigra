@@ -1,37 +1,54 @@
 let start = performance.now();
 
-const { MONGO_DB } = require('./constants');
-const mongoConn = require('./connection/mongo');
+const { COLLECTIONS_DATA } = require("./constants");
 
-const filmsColl = require('./data/collections/films.json');
-const tvShowsColl = require('./data/collections/tv_shows.json');
-const usersColl = require('./data/collections/users.json');
+const exportData = require("./export-data");
+const createCollections = require("./create-collections");
+const importCollections = require("./import-collections");
+const calcTime = require("./utils/calc-time");
 
-async function migrate() {
-  await mongoConn.connect();
-  const db = mongoConn.db(MONGO_DB);
+/**
+ * 1 - export data
+ * 2 - create collections
+ * 3 - import collections
+ * 4 - full migrate process
+ */
 
-  const films = db.collection('films');
-  const tvShows = db.collection('tv_shows');
-  const users = db.collection('users');
+let opt = Number(process.argv[2]) ?? null;
 
-  let data = [];
-  try {
-    data['films'] = await films.insertMany(filmsColl);
-    data['tv_shows'] = await tvShows.insertMany(tvShowsColl);
-    data['users'] = await users.insertMany(usersColl);
-  } catch(err) {
-    throw err;
-  }
-  return data;
+if (!opt) {
+  throw 'Invalid command option!';
 }
 
-migrate().then((data) => {
-  console.log(data);
-}).catch(err => {
-  console.log(err);
-}).finally(() => {
-  mongoConn.close();
-  let end = performance.now();
-  console.log(`Script time: ${end - start} ms`)
-});
+switch(opt) {
+  case 1:
+    exportData();
+    calcTime(start);
+    break;
+  case 2:
+    createCollections();
+    calcTime(start);
+    break;
+  case 3:
+    console.log('Import collections');
+    importCollections(COLLECTIONS_DATA).then((data) => {
+      console.log(data);
+      calcTime(start);
+    }).catch(err => {
+      console.log(err);
+    });
+    break;
+  case 4:
+    console.log('Full migrate');
+    exportData();
+    createCollections();
+    importCollections(COLLECTIONS_DATA).then((data) => {
+      console.log(data);
+      calcTime(start);
+    }).catch(err => {
+      console.log(err);
+    });
+    break;
+  default:
+    console.log(opt);
+}

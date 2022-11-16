@@ -8,10 +8,22 @@ const MYSQL_PASS = String(process.env.MYSQL_PASS) || '';
 const MYSQL_DB = String(process.env.MYSQL_DB) || '';
 const MONGO_URL = String(process.env.MONGO_URL) || '';
 
-const COLLECTIONS = [
-  'films',
-  'tv_shows',
-  'users'
+const COLL_PATH = './src/data/collections';
+const RAW_PATH = './src/data/raw';
+
+const COLLECTIONS_DATA = [
+  {
+    name: 'films',
+    path: './data/collections/films.json'
+  },
+  {
+    name: 'tv_shows',
+    path: './data/collections/tv_shows.json'
+  },
+  {
+    name: 'users',
+    path: './data/collections/users.json'
+  },
 ];
 
 module.exports = {
@@ -21,5 +33,7 @@ module.exports = {
   MYSQL_PASS,
   MYSQL_DB,
   MONGO_URL,
-  COLLECTIONS
+  COLL_PATH,
+  RAW_PATH,
+  COLLECTIONS_DATA,
 };
