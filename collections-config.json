@@ -1,12 +1,16 @@
 [
   {
-    "source": "users.json",
+    "source": "films.json",
+    "key": "id",
     "aggregate": [
       {
         "layer": 0,
-        "source": "",
-        "exclude": [],
-        "include": []
+        "source": "studios.json",
+        "key": "id",
+        "prefix": "studio",
+        "exclude": [
+          "id"
+        ]
       }
     ],
     "path": "./data/collections/users.json"

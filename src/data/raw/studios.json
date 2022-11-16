@@ -1,5 +1,4 @@
-{
-"studios": [
+[
 	{
 		"id" : 1,
 		"name" : "studio 1"
@@ -80,4 +79,4 @@
 		"id" : 20,
 		"name" : "studio 20"
 	}
-]}
+]

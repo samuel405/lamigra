@@ -1,5 +1,4 @@
-{
-"tv_shows": [
+[
 	{
 		"id" : 1,
 		"name" : "tv_show 1",
@@ -120,4 +119,4 @@
 		"year" : 2022,
 		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit."
 	}
-]}
+]

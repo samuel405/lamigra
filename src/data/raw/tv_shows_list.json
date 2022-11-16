@@ -1,5 +1,4 @@
-{
-"tv_shows_list": [
+[
 	{
 		"id" : 1,
 		"fk_show" : 16,
@@ -100,4 +99,4 @@
 		"fk_show" : 5,
 		"fk_user" : 13
 	}
-]}
+]

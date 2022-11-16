@@ -1,7 +1,7 @@
 let start = performance.now();
 const fs = require('fs');
 
-const { COLLECTIONS_DATA } = require("./constants");
+const { COLLECTIONS_DATA, CONFIG_FILE } = require("./constants");
 
 const exportData = require("./export-data");
 const createCollections = require("./create-collections");
@@ -10,6 +10,7 @@ const calcTime = require("./utils/calc-time");
 
 const log = require("./utils/log");
 const generateConfigFile = require('./commands/generate-config-file');
+const generateCollectionBatchData = require('./commands/create-collection');
 
 /**
  * 1 - export data
@@ -64,6 +65,10 @@ switch(opt) {
       generateConfigFile(collNames);
     }
 
+    break;
+  case 6:
+    let configs = require('../collections-config.json');
+    generateCollectionBatchData(configs[0]);
     break;
   default:
     console.log(opt);

@@ -1,5 +1,4 @@
-{
-"film_actors": [
+[
 	{
 		"id" : 1,
 		"fk_film" : 18,
@@ -100,4 +99,4 @@
 		"fk_film" : 17,
 		"fk_actors" : 5
 	}
-]}
+]

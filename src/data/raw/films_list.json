@@ -1,5 +1,4 @@
-{
-"films_list": [
+[
 	{
 		"id" : 1,
 		"fk_film" : 1,
@@ -120,4 +119,4 @@
 		"fk_user" : 1,
 		"evaluation" : 5
 	}
-]}
+]

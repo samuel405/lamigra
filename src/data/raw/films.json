@@ -1,5 +1,4 @@
-{
-"films": [
+[
 	{
 		"id" : 1,
 		"name" : "film 1",
@@ -180,4 +179,4 @@
 		"sinopse" : "\n  Lorem ipsum dolor sit amet,\n  consectetur adipiscing elit.",
 		"fk_studio" : 20
 	}
-]}
+]

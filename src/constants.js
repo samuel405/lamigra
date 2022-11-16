@@ -11,6 +11,7 @@ const MONGO_URL = String(process.env.MONGO_URL) || '';
 const COLL_PATH = './src/data/collections';
 const REL_COLL_PATH = './data/collections';
 const RAW_PATH = './src/data/raw';
+const REL_RAW_PATH = './data/raw';
 
 const CONFIG_FILE = './collections-config.json';
 
@@ -39,6 +40,7 @@ module.exports = {
   COLL_PATH,
   REL_COLL_PATH,
   RAW_PATH,
+  REL_RAW_PATH,
   COLLECTIONS_DATA,
   CONFIG_FILE
 };
