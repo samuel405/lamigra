@@ -1,0 +1,14 @@
+[
+  {
+    "name": "films",
+    "path": "./data/collections/films.json"
+  },
+  {
+    "name": "tv_shows",
+    "path": "./data/collections/tv_shows.json"
+  },
+  {
+    "name": "users",
+    "path": "./data/collections/users.json"
+  }
+]

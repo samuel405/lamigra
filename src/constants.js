@@ -9,7 +9,10 @@ const MYSQL_DB = String(process.env.MYSQL_DB) || '';
 const MONGO_URL = String(process.env.MONGO_URL) || '';
 
 const COLL_PATH = './src/data/collections';
+const REL_COLL_PATH = './data/collections';
 const RAW_PATH = './src/data/raw';
+
+const CONFIG_FILE = './collections-config.json';
 
 const COLLECTIONS_DATA = [
   {
@@ -34,6 +37,8 @@ module.exports = {
   MYSQL_DB,
   MONGO_URL,
   COLL_PATH,
+  REL_COLL_PATH,
   RAW_PATH,
   COLLECTIONS_DATA,
+  CONFIG_FILE
 };

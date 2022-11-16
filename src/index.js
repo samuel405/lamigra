@@ -1,4 +1,5 @@
 let start = performance.now();
+const fs = require('fs');
 
 const { COLLECTIONS_DATA } = require("./constants");
 
@@ -6,6 +7,9 @@ const exportData = require("./export-data");
 const createCollections = require("./create-collections");
 const importCollections = require("./import-collections");
 const calcTime = require("./utils/calc-time");
+
+const log = require("./utils/log");
+const generateConfigFile = require('./commands/generate-config-file');
 
 /**
  * 1 - export data
@@ -22,6 +26,7 @@ if (!opt) {
 
 switch(opt) {
   case 1:
+    log('yellow', 'Export data');
     exportData();
     calcTime(start);
     break;
@@ -30,7 +35,7 @@ switch(opt) {
     calcTime(start);
     break;
   case 3:
-    console.log('Import collections');
+    log('yellow', 'Import collections');
     importCollections(COLLECTIONS_DATA).then((data) => {
       console.log(data);
       calcTime(start);
@@ -39,7 +44,7 @@ switch(opt) {
     });
     break;
   case 4:
-    console.log('Full migrate');
+    log('yellow', 'Full migrate');
     exportData();
     createCollections();
     importCollections(COLLECTIONS_DATA).then((data) => {
@@ -48,6 +53,17 @@ switch(opt) {
     }).catch(err => {
       console.log(err);
     });
+    break;
+  case 5:
+    // @todo listar os nomes dos arquivos expotados para
+    // abstrair os dados das collections
+
+    let collNames = process.argv[3].split(',') || null;
+
+    if (collNames) {
+      generateConfigFile(collNames);
+    }
+
     break;
   default:
     console.log(opt);

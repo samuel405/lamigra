@@ -1,6 +1,8 @@
+const log = require("./utils/log");
+
 function exportData() {
-  console.log('exporting data...');
-  console.log('data exported');
+  log('blue', 'exporting data...');
+  log('green', 'data exported');
 }
 
 module.exports = exportData;

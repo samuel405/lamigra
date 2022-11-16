@@ -1,0 +1,50 @@
+[
+  {
+    "source": "users.json",
+    "aggregate": [
+      {
+        "layer": 0,
+        "source": "",
+        "exclude": [],
+        "include": []
+      }
+    ],
+    "path": "./data/collections/users.json"
+  },
+  {
+    "source": "films.json",
+    "aggregate": [
+      {
+        "layer": 0,
+        "source": "",
+        "exclude": [],
+        "include": []
+      }
+    ],
+    "path": "./data/collections/films.json"
+  },
+  {
+    "source": "tv_shows.json",
+    "aggregate": [
+      {
+        "layer": 0,
+        "source": "",
+        "exclude": [],
+        "include": []
+      }
+    ],
+    "path": "./data/collections/tv_shows.json"
+  },
+  {
+    "source": "teste.json",
+    "aggregate": [
+      {
+        "layer": 0,
+        "source": "",
+        "exclude": [],
+        "include": []
+      }
+    ],
+    "path": "./data/collections/teste.json"
+  }
+]

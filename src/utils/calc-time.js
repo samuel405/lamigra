@@ -1,6 +1,8 @@
+const log = require("./log");
+
 function calcTime(start) {
   let end = performance.now();
-  console.log(`Script time: ${end - start} ms`);
+  log('green', `Script time: ${end - start} ms`);
   process.exit(0);
 }
 
